@@ -16,46 +16,60 @@ h4 {
 button {
   border: none;
   border-radius: 0;
+  outline: none;
   cursor: pointer;
+}
+
+input {
+  outline: none;
 }
 
 
 
 /*MAIN CONTAINERS*/
-.main-container {
+body {
   background-color: #f2f2f2;
+  display: flex;
+  /*flex-wrap: wrap;*/
+  width: 100%;
+}
+
+.main-container {
+  display: inline-block;
+  width: 100%;
 }
 
 .sidebar-container {
+  /*display: inline-block;*/
   background-color: #333333;
-  width: 140px;
-  height: 100%;
+  width: 160px;
+  min-width: 140px;
   position: relative;
 }
 
 /*SIDEBAR*/
-
 .headshot-container {
   width: 100%;
-  padding: 30px 0 10px;
+  padding: 25px 0 10px;
   border-bottom: 2px solid #262626;
 }
 
 .headshot-img {
   border-radius: 50%;
-  margin: 0 auto 20px;
-  width: 45px;
-  height: 45px;
+  margin: 0 auto 15px;
+  width: 65px;
+  height: 65px;
   background: url('../images/dog.jpg') no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .headshot-label {
+  color:  #8c8c8c;
   text-align: center;
   font-size: .8em;
   font-weight: 700;
-  margin: 10px 0 20px 15px;
+  margin: 10px 0 10px 15px;
 }
 
 .sidebar-nav {
@@ -113,21 +127,72 @@ button {
   color: red;
 }
 
+/*MAIN - HEADER*/
 
-/*MAIN*/
+.main-header {
+  display: flex;
+  flex-direction: row;
+  background-color: purple;
+  width: 100%;
+}
+
+.hdr-btn {
+  width: 60px;
+  height: 50px;
+  border: 1px solid #666666;
+}
+
+.site-search-wrap {
+  position: relative;
+  width: 100%;
+
+}
+
+.search-input {
+  box-sizing: border-box;
+  flex: 2;
+  width: 100%;
+  padding: 5px 35px;
+  height: 50px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 17px;
+  left: 10px;
+}
+
+.add-user-btn,
+.edit-cal-btn,
+.tile-menu-btn {
+  margin-left: auto;
+}
+
 
 /*MEDIA*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
+  body {
+    display: block;
+  }
+
   .sidebar-container {
     width: 100%;
     height: auto;
   }
 
   .sidebar-nav {
-    margin: 0px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
     display: inline-block;
-    padding: 5px 15px;
+    border: none;
+    padding: 10px 10px;
     border-right: 1px solid black;
+    width: 32%;
+  }
+
+  .headshot-container {
+    border-bottom: none;
   }
 
   .cat-nav {
