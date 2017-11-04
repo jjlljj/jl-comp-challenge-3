@@ -16,46 +16,56 @@ h4 {
 button {
   border: none;
   border-radius: 0;
+  outline: none;
   cursor: pointer;
 }
 
-
+input {
+  outline: none;
+}
 
 /*MAIN CONTAINERS*/
+.page-container {
+  /*background-color: #f2f2f2;*/
+  background-color: purple;
+  display: flex;
+}
+
 .main-container {
-  background-color: #f2f2f2;
+  display: inline-block;
+  width: 100%;
 }
 
 .sidebar-container {
   background-color: #333333;
-  width: 140px;
-  height: 100%;
+  width: 160px;
+  min-width: 140px;
   position: relative;
 }
 
 /*SIDEBAR*/
-
 .headshot-container {
   width: 100%;
-  padding: 30px 0 10px;
+  padding: 25px 0 10px;
   border-bottom: 2px solid #262626;
 }
 
 .headshot-img {
   border-radius: 50%;
-  margin: 0 auto 20px;
-  width: 45px;
-  height: 45px;
+  margin: 0 auto 15px;
+  width: 65px;
+  height: 65px;
   background: url('../images/dog.jpg') no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .headshot-label {
+  color:  #8c8c8c;
   text-align: center;
   font-size: .8em;
   font-weight: 700;
-  margin: 10px 0 20px 15px;
+  margin: 10px 0 10px 15px;
 }
 
 .sidebar-nav {
@@ -96,9 +106,13 @@ button {
 }
 
 .sidebar-nav-item:hover,
-.sidebar-nav .selected {
+.sidebar-nav .active-item {
   color: #f2f2f2;
   background-color: #262626;
+}
+
+.sidebar-nav .active-item {
+  border-left: 2px solid #006bb3;
 }
 
 .yellow-icon {
@@ -113,29 +127,103 @@ button {
   color: red;
 }
 
+/*MAIN SEARCH HEADER*/
 
-/*MAIN*/
+.main-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.hdr-btn {
+  min-width: 50px;
+  height: 50px;
+  border: 1px solid #666666;
+}
+
+.site-search-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 35px;
+  height: 50px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 17px;
+  left: 10px;
+}
+
+.add-user-btn,
+.edit-cal-btn,
+.tile-menu-btn {
+  margin-left: auto;
+}
+
 
 /*MEDIA*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
+  .page-container {
+    display: block;
+  }
+
+  /*SIDEBAR --> MOBILE HEADER*/
   .sidebar-container {
     width: 100%;
     height: auto;
   }
 
   .sidebar-nav {
-    margin: 0px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
     display: inline-block;
-    padding: 5px 15px;
+    border: none;
+    padding: 10px 10px;
     border-right: 1px solid black;
+    width: 32%;
+  }
+
+  .headshot-container {
+    border-bottom: none;
   }
 
   .cat-nav {
     border-right: none;
   }
 
+  .sidebar-nav-label {
+    padding: 0;
+    margin: 10px 0 0;
+  }
+
+  .sidebar-nav-label:focus {
+
+  }
+
   .sidebar-nav-item {
     display: none;
+  }
+
+  /* MAIN SEARCH HEADER */
+
+  .main-header {
+    flex-wrap: wrap;
+  }
+
+  .toggle-sidebar-btn {
+    display: none
+  }
+
+  .add-user-btn,
+  .edit-cal-btn,
+  .tile-menu-btn {
+    min-width: 33%;
   }
 
 }
