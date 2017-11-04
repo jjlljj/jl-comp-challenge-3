@@ -24,14 +24,11 @@ input {
   outline: none;
 }
 
-
-
 /*MAIN CONTAINERS*/
-body {
-  background-color: #f2f2f2;
+.page-container {
+  /*background-color: #f2f2f2;*/
+  background-color: purple;
   display: flex;
-  /*flex-wrap: wrap;*/
-  width: 100%;
 }
 
 .main-container {
@@ -40,7 +37,6 @@ body {
 }
 
 .sidebar-container {
-  /*display: inline-block;*/
   background-color: #333333;
   width: 160px;
   min-width: 140px;
@@ -110,9 +106,13 @@ body {
 }
 
 .sidebar-nav-item:hover,
-.sidebar-nav .selected {
+.sidebar-nav .active-item {
   color: #f2f2f2;
   background-color: #262626;
+}
+
+.sidebar-nav .active-item {
+  border-left: 2px solid #006bb3;
 }
 
 .yellow-icon {
@@ -127,17 +127,16 @@ body {
   color: red;
 }
 
-/*MAIN - HEADER*/
+/*MAIN SEARCH HEADER*/
 
 .main-header {
   display: flex;
   flex-direction: row;
-  background-color: purple;
   width: 100%;
 }
 
 .hdr-btn {
-  width: 60px;
+  min-width: 50px;
   height: 50px;
   border: 1px solid #666666;
 }
@@ -145,12 +144,10 @@ body {
 .site-search-wrap {
   position: relative;
   width: 100%;
-
 }
 
 .search-input {
   box-sizing: border-box;
-  flex: 2;
   width: 100%;
   padding: 5px 35px;
   height: 50px;
@@ -171,10 +168,11 @@ body {
 
 /*MEDIA*/
 @media screen and (max-width: 600px) {
-  body {
+  .page-container {
     display: block;
   }
 
+  /*SIDEBAR --> MOBILE HEADER*/
   .sidebar-container {
     width: 100%;
     height: auto;
@@ -199,8 +197,33 @@ body {
     border-right: none;
   }
 
+  .sidebar-nav-label {
+    padding: 0;
+    margin: 10px 0 0;
+  }
+
+  .sidebar-nav-label:focus {
+
+  }
+
   .sidebar-nav-item {
     display: none;
+  }
+
+  /* MAIN SEARCH HEADER */
+
+  .main-header {
+    flex-wrap: wrap;
+  }
+
+  .toggle-sidebar-btn {
+    display: none
+  }
+
+  .add-user-btn,
+  .edit-cal-btn,
+  .tile-menu-btn {
+    min-width: 33%;
   }
 
 }
