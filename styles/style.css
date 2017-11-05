@@ -7,7 +7,11 @@ sidebar text is #8c8c8c and #666666
 nav item font color is #8c8c8c
 header button outlines are #bfbfbf
 
+
+need to:
+--> consolidate service  & summary section button styling
 */
+
 
 
 body {
@@ -155,12 +159,14 @@ input {
 .hdr-btn {
   min-width: 50px;
   height: 50px;
-  color: #4d4d4d;
+  font-size: .9em;
+  color: #8c8c8c;
   border: 1px solid #bfbfbf;
 }
 
 .hdr-btn:hover {
-  background-color: #f2f2f2;
+  color: #666666;
+  border-color: #8c8c8c;
 }
 
 .hdr-btn .fa-caret-left {
@@ -179,8 +185,16 @@ input {
   height: 50px;
 }
 
+.search-input:focus{
+  color: #666666;
+  border: 1px solid #8c8c8c;
+  /*border-color: blue;*/
+  box-shadow: none;
+}
+
 .search-icon {
   position: absolute;
+  color: #8c8c8c;
   top: 17px;
   left: 10px;
 }
@@ -234,13 +248,14 @@ input {
   color: #8c8c8c;
   font-weight: 900;
   height: 30px;
-  width: 30px;
+  min-width: 30px;
   border-radius: 15px;
   margin: 0 5px;
 }
 
 .service-nav-btn:hover {
-  background-color: #f2f2f2;
+  color: #666666;
+  border-color: #8c8c8c;
 }
 
 .service-open-btn {
@@ -307,6 +322,7 @@ input {
   width: 80px;
   height: 80px;
   margin: 10px 20px 25px 0;
+  transform: rotate(45deg);
 }
 
 .applicant-graph {
@@ -338,7 +354,8 @@ input {
 }
 
 .summary-btn:hover {
-  /*background-color: */
+  color: #666666;
+  border-color: #8c8c8c;
 }
 
 .bar-graph {
@@ -434,7 +451,7 @@ input {
   .add-user-btn,
   .edit-cal-btn,
   .tile-menu-btn {
-    min-width: 33%;
+    min-width: 33.333333333%;
   }
 
   /*SERVICE REPRESENTATIVE MENU SECTION*/
