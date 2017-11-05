@@ -284,7 +284,69 @@ input {
 }
 
 
-/* GRAPH SECTION */
+/* SUMMARY - GRAPH SECTION */
+.summary-graphs-container {
+  background-color: #f2f2f2;
+  border-bottom: 2px solid #bfbfbf;
+  padding: 40px 20px 30px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.graphs-wrap {
+  display: inline-block;
+}
+
+.circle-graph {
+  display: inline-block;
+  border-radius: 50%;
+  border: 6px solid #bfbfbf;
+  width: 80px;
+  height: 80px;
+  margin: 10px 20px 25px 0;
+}
+
+.applicant-graph {
+  border-bottom-color: #006bb3;
+}
+
+.interviews-graph {
+  border-bottom-color: #2eb82e;
+  border-left-color: #2eb82e;
+}
+
+.forwards-graph {
+  border-bottom-color: orange; 
+  border-left-color: orange;
+  border-top-color: orange; 
+  margin: 10px 0 25px;
+}
+
+.summary-btn {
+  display: block;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #bfbfbf;
+  color: #8c8c8c;
+  font-weight: 900;
+  border-radius: 15px;
+  padding: 0 12px;
+  margin: 10px 0 10px 66px;
+}
+
+.summary-btn:hover {
+  /*background-color: */
+}
+
+.bar-graph {
+  background-color: #006bb3;
+  width: 250px;
+  height: 105px;
+  margin: 10px 0 24px 10px;
+}
 
 
 
@@ -404,8 +466,24 @@ input {
   .nav-drop-2 {
     display: none;
   }
+
+  /* SUMMARY - GRAPH SECTION */
+
+  .circle-graph {
+    width: 60px;
+    height: 60px;
+  }
+
+  .bar-graph {
+    margin: 30px auto;
+  }
+
+  .summary-btn {
+    margin: auto;
+  }
+
 }
-}
+
 
 
 
