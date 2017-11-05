@@ -9,6 +9,9 @@ header button outlines are #bfbfbf
 
 
 need to:
+--> find graph 250px by 105 px... or make one??
+--> dropdown navs for sidebar menus
+
 --> consolidate service  & summary section button styling
 --> consolidate container stying --> graphs and info esp
 --> add labels to circle graphs --> should go below graphs on mobile
@@ -30,6 +33,10 @@ body {
 
 h2 {
   font-size: 1.2em;
+}
+
+h3 {
+  font-size: .85em;
 }
 
 h4 {
@@ -340,12 +347,12 @@ input {
 .interviews-graph {
   border-bottom-color: #2eb82e;
   border-left-color: #2eb82e;
+  border-top-color: #2eb82e; 
 }
 
 .forwards-graph {
   border-bottom-color: orange; 
   border-left-color: orange;
-  border-top-color: orange; 
   margin: 10px 0 25px;
 }
 
@@ -403,19 +410,69 @@ input {
 
 .job-description-container {
   background-color: #ffffff;
-  max-width: 400px;
+  max-width: 450px;
   min-width: 290px;
+  border-radius: 2px;
 }
+
+.description-hdr {
+  background-color: #666666;
+  padding: 15px 20px;
+  border-radius: 2px;
+}
+
+.description-title {
+  display: inline-block;
+  font-size: .9em;
+  font-weight: 700;
+  color: #f2f2f2;
+}
+
+.description-edit-btn {
+  display: inline-block;
+  color: #f2f2f2;
+  background-color: #8c8c8c;
+  font-weight: 700;
+  padding: 8px 10px;
+  margin: 0 10px;
+  border-radius: 2px;
+}
+
+.description-edit-btn:hover {
+  background-color: #262626
+}
+
+.description-edit-btn .fa-pencil {
+  margin-right: 5px;
+}
+
+.description-row {
+  margin: 15px;
+}
+
+
 
 
 
 .social-container {
   width: 200px;
-  margin: 0 10px 0 25px;
-  background-color: purple;
+  margin: 0 25px;
+  /*background-color: purple;*/
+}
+
+.social-btn-wrap {
 
 }
 
+.social-btn {
+  padding: 10px 20px;
+  background-color: blue;
+  color: #ffffff;
+  font-size: .8em;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 2px;
+}
 
 
 
@@ -455,7 +512,7 @@ input {
   /* SUMMARY - TILE SECTION */
   .social-container {
     width: auto;
-    max-width: 400px;
+    max-width: 500px;
     min-width: 290px;
     margin: 30px 0 0;
   }
