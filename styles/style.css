@@ -7,7 +7,17 @@ sidebar text is #8c8c8c and #666666
 nav item font color is #8c8c8c
 header button outlines are #bfbfbf
 
+
+need to:
+--> consolidate service  & summary section button styling
+--> consolidate container stying --> graphs and info esp
+--> add labels to circle graphs --> should go below graphs on mobile
+--> fix sidebar header's mobile appearance --> menu looks dumb
+
+--> another media query for medium size screens so summary graphs justify L & R and maintain line?
+
 */
+
 
 
 body {
@@ -15,6 +25,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #4d4d4d;
+  min-width: 320px;
 }
 
 h2 {
@@ -44,13 +55,12 @@ input {
 
 /*MAIN CONTAINERS*/
 .page-container {
-  /*background-color: #f2f2f2;*/
-  background-color: purple;
   display: flex;
 }
 
 .main-container {
   display: inline-block;
+  background-color: #f2f2f2;
   width: 100%;
 }
 
@@ -148,6 +158,7 @@ input {
 /*MAIN SEARCH HEADER*/
 .main-header {
   display: flex;
+  background-color: #ffffff;
   flex-direction: row;
   width: 100%;
 }
@@ -155,12 +166,14 @@ input {
 .hdr-btn {
   min-width: 50px;
   height: 50px;
-  color: #4d4d4d;
+  font-size: .9em;
+  color: #8c8c8c;
   border: 1px solid #bfbfbf;
 }
 
 .hdr-btn:hover {
-  background-color: #f2f2f2;
+  color: #666666;
+  border-color: #8c8c8c;
 }
 
 .hdr-btn .fa-caret-left {
@@ -179,8 +192,16 @@ input {
   height: 50px;
 }
 
+.search-input:focus{
+  color: #666666;
+  border: 1px solid #8c8c8c;
+  /*border-color: blue;*/
+  box-shadow: none;
+}
+
 .search-icon {
   position: absolute;
+  color: #8c8c8c;
   top: 17px;
   left: 10px;
 }
@@ -194,6 +215,7 @@ input {
 /*SERVICE REPRESENTATIVE MENU*/
 .service-rep-container {
   position: relative;
+  background-color: #ffffff;
   height: 100px;
   padding: 30px 25px 0;
   border-bottom: 2px solid #bfbfbf;
@@ -226,7 +248,7 @@ input {
 .service-nav-btn-wrap {
   position: absolute;
   top: 40px;
-  right: 30px;
+  right: 20px;
 }
 
 .service-nav-btn {
@@ -234,13 +256,14 @@ input {
   color: #8c8c8c;
   font-weight: 900;
   height: 30px;
-  width: 30px;
+  min-width: 30px;
   border-radius: 15px;
   margin: 0 5px;
 }
 
 .service-nav-btn:hover {
-  background-color: #f2f2f2;
+  color: #666666;
+  border-color: #8c8c8c;
 }
 
 .service-open-btn {
@@ -286,9 +309,9 @@ input {
 
 /* SUMMARY - GRAPH SECTION */
 .summary-graphs-container {
-  background-color: #f2f2f2;
   border-bottom: 2px solid #bfbfbf;
-  padding: 40px 20px 30px;
+  padding: 40px 0 30px;
+  margin: 0 25px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -301,6 +324,7 @@ input {
 }
 
 .circle-graph {
+  transform: rotate(45deg);
   display: inline-block;
   border-radius: 50%;
   border: 6px solid #bfbfbf;
@@ -337,15 +361,59 @@ input {
   margin: 10px 0 10px 66px;
 }
 
-.summary-btn:hover {
-  /*background-color: */
+.bar-graph-btn {
+  margin-left: 85px;
+}
+.summary-btn:hover,
+.summary-toggle-btn:hover {
+  color: #666666;
+  border-color: #8c8c8c;
 }
 
 .bar-graph {
   background-color: #006bb3;
   width: 250px;
   height: 105px;
-  margin: 10px 0 24px 10px;
+  margin: 10px 0 24px 25px;
+}
+
+.summary-toggle-btn {
+  position: absolute;
+  background-color: #ffffff;
+  bottom: -12px;
+  border: 1px solid #bfbfbf;
+  box-shadow: 0 0 0 5px #f2f2f2;
+  color: #8c8c8c;
+  font-weight: 900;
+  border-radius: 12px;
+  width: 24px;
+  height: 24px
+}
+
+/* SUMMARY - TILE SECTION */
+.summary-info-container {
+  padding: 40px 0 30px;
+  margin: 0 25px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.job-description-container {
+  background-color: #ffffff;
+  max-width: 400px;
+  min-width: 290px;
+}
+
+
+
+.social-container {
+  width: 200px;
+  margin: 0 10px 0 25px;
+  background-color: purple;
+
 }
 
 
@@ -355,16 +423,13 @@ input {
 
 
 
+/* MEDIA */
+
+@media screen and (max-width: 850px) {
 
 
 
-/*MEDIA*/
-
-@media screen and (max-width: 815px) {
-
-
-
-  /*SERVICE REPRESENTATIVE MENU SECTION*/
+  /* SERVICE REPRESENTATIVE MENU SECTION */
    .service-rep-container {
     height: auto;
     margin-top: 
@@ -377,6 +442,24 @@ input {
   .nav-drop {
     display: none;
   }
+
+  /* SUMMARY - GRAPH SECTION */
+  .bar-graph {
+    margin-left: 10px;
+  }
+
+  .bar-graph-btn {
+    margin-left: 70px;
+  }
+
+  /* SUMMARY - TILE SECTION */
+  .social-container {
+    width: auto;
+    max-width: 400px;
+    min-width: 290px;
+    margin: 30px 0 0;
+  }
+
 }
 
 @media screen and (max-width: 675px) {
@@ -434,7 +517,7 @@ input {
   .add-user-btn,
   .edit-cal-btn,
   .tile-menu-btn {
-    min-width: 33%;
+    min-width: 33.333333333%;
   }
 
   /*SERVICE REPRESENTATIVE MENU SECTION*/
@@ -448,8 +531,8 @@ input {
 }
 
 @media screen and (max-width: 540px) {
-  /*SERVICE REPRESENTATIVE MENU SECTION*/
-
+ 
+  /* SERVICE REPRESENTATIVE MENU SECTION */
   .service-nav-btn-wrap {
     display: block;
     position: relative;
@@ -461,17 +544,24 @@ input {
 
 @media screen and (max-width: 413px) {
 
-   /*SERVICE REPRESENTATIVE MENU SECTION*/
-
+   /* SERVICE REPRESENTATIVE MENU SECTION */
   .nav-drop-2 {
     display: none;
   }
 
   /* SUMMARY - GRAPH SECTION */
+  .summary-graphs-container {
+    margin: 0 10px;
+  }
 
   .circle-graph {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .bar-graph {
+    width: 290px;
+    height: 135px;
   }
 
   .bar-graph {
@@ -480,6 +570,12 @@ input {
 
   .summary-btn {
     margin: auto;
+  }
+
+  /* SUMMARY - INFO SECTION */
+  .summary-info-container {
+    margin: 0 20px;
+    /* maybe reduce this margin... check once more styling is done..*/
   }
 
 }
