@@ -439,7 +439,7 @@ input {
 }
 
 .description-edit-btn:hover {
-  background-color: #262626
+  color: #ffffff;#262626
 }
 
 .description-edit-btn .fa-pencil {
@@ -466,12 +466,89 @@ input {
 
 .social-btn {
   padding: 10px 20px;
-  background-color: blue;
   color: #ffffff;
-  font-size: .8em;
+  font-size: .75em;
+  font-weight: 400;
   width: 100%;
   margin-bottom: 15px;
   border-radius: 2px;
+  position: relative;
+}
+
+.social-btn .social-icon {
+  position: absolute;
+  left: 15px;
+  top: 12px;
+}
+
+.facebook-btn {
+  background-color: #3B5998;
+}
+
+.twitter-btn {
+  background-color: #00aced;
+}
+
+.linked-in-btn {
+  background-color: #0077B5;
+  margin-bottom: 0;
+}
+
+.social-widget-wrap {
+  padding: 20px 0;
+  border-bottom: 2px solid #bfbfbf;
+}
+
+.social-widget-wrap:last-child {
+  border-bottom: none;
+}
+
+.widget-title {
+
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.widget-icon {
+  margin-right: 5px;
+}
+
+.widget-text {
+  color: #8c8c8c;
+  font-size: .7em;
+  line-height: 1.4em;
+  margin-bottom: 15px;
+}
+
+.url-wrap {
+  background-color: #ffffff;
+  position: relative;
+  padding: 7px 45px 7px 7px;
+  border-radius: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.url-text {
+  display: inline-block;
+  font-size: .7em;
+  color: #8c8c8c;
+}
+
+.copy-url-btn {
+  height: 30px;
+  background-color: #2eb82e;
+  color: #f2f2f2;
+  font-weight: 700;
+  font-size: .6em;
+  border-radius: 2px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.copy-url-btn:hover {
+  color: #ffffff;#262626
 }
 
 
@@ -636,7 +713,3 @@ input {
   }
 
 }
-
-
-
-
