@@ -21,8 +21,6 @@ need to:
 
 */
 
-
-
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -417,13 +415,13 @@ input {
 
 .description-hdr {
   background-color: #666666;
-  padding: 15px 20px;
+  padding: 10px 20px;
   border-radius: 2px;
 }
 
 .description-title {
   display: inline-block;
-  font-size: .9em;
+  font-size: .8em;
   font-weight: 700;
   color: #f2f2f2;
 }
@@ -439,7 +437,7 @@ input {
 }
 
 .description-edit-btn:hover {
-  color: #ffffff;#262626
+  color: #ffffff;
 }
 
 .description-edit-btn .fa-pencil {
@@ -466,13 +464,17 @@ input {
 
 .social-btn {
   padding: 10px 20px;
-  color: #ffffff;
+  color: #f2f2f2;
   font-size: .75em;
   font-weight: 400;
   width: 100%;
   margin-bottom: 15px;
   border-radius: 2px;
   position: relative;
+}
+
+.social-btn:hover {
+  color: #ffffff;
 }
 
 .social-btn .social-icon {
@@ -501,6 +503,7 @@ input {
 
 .social-widget-wrap:last-child {
   border-bottom: none;
+  padding-bottom: 0;
 }
 
 .widget-title {
