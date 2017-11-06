@@ -29,6 +29,10 @@ body {
   min-width: 320px;
 }
 
+p {
+  font-size: .8em;
+}
+
 h2 {
   font-size: 1.2em;
 }
@@ -444,8 +448,32 @@ input {
   margin-right: 5px;
 }
 
+.description-table {
+  margin: 10px 25px;
+}
+
 .description-row {
-  margin: 15px;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.description-row:last-child {
+  border-bottom: none;
+}
+
+.row-data {
+  vertical-align: top;
+  padding: 20px 0;
+}
+
+.row-heading {
+  margin-top: 2px;
+  width: 140px;
+  font-size: .8em;
+  font-weight: 900;
+}
+
+.row-content {
+  line-height: 1.3em;
 }
 
 
@@ -713,6 +741,20 @@ input {
   .summary-info-container {
     margin: 0 20px;
     /* maybe reduce this margin... check once more styling is done..*/
+  }
+
+  .row-data {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .row-heading {
+    margin-top: 15px;
+  }
+
+  .row-content {
+    margin-left: 10px;
+    margin-bottom: 10px;
   }
 
 }
