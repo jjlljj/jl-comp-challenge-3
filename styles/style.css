@@ -9,6 +9,8 @@ header button outlines are #bfbfbf
 
 
 need to:
+--> media query for BIG screens --> graphs && social sections all need to grow
+
 --> find graph 250px by 105 px... or make one??
 --> dropdown navs for sidebar menus
 
@@ -17,11 +19,7 @@ need to:
 --> add labels to circle graphs --> should go below graphs on mobile
 --> fix sidebar header's mobile appearance --> menu looks dumb
 
---> another media query for medium size screens so summary graphs justify L & R and maintain line?
-
 */
-
-
 
 body {
   font-family: 'Lato', sans-serif;
@@ -365,7 +363,7 @@ input {
   font-weight: 900;
   border-radius: 15px;
   padding: 0 12px;
-  margin: 10px 0 10px 66px;
+  margin: 10px 0 10px 68px;
 }
 
 .bar-graph-btn {
@@ -417,13 +415,13 @@ input {
 
 .description-hdr {
   background-color: #666666;
-  padding: 15px 20px;
+  padding: 10px 20px;
   border-radius: 2px;
 }
 
 .description-title {
   display: inline-block;
-  font-size: .9em;
+  font-size: .8em;
   font-weight: 700;
   color: #f2f2f2;
 }
@@ -439,7 +437,7 @@ input {
 }
 
 .description-edit-btn:hover {
-  color: #ffffff;#262626
+  color: #ffffff;
 }
 
 .description-edit-btn .fa-pencil {
@@ -466,13 +464,17 @@ input {
 
 .social-btn {
   padding: 10px 20px;
-  color: #ffffff;
+  color: #f2f2f2;
   font-size: .75em;
   font-weight: 400;
   width: 100%;
   margin-bottom: 15px;
   border-radius: 2px;
   position: relative;
+}
+
+.social-btn:hover {
+  color: #ffffff;
 }
 
 .social-btn .social-icon {
@@ -501,6 +503,7 @@ input {
 
 .social-widget-wrap:last-child {
   border-bottom: none;
+  padding-bottom: 0;
 }
 
 .widget-title {
@@ -559,7 +562,7 @@ input {
 
 /* MEDIA */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 800px) {
 
 
 
@@ -579,7 +582,7 @@ input {
 
   /* SUMMARY - GRAPH SECTION */
   .bar-graph {
-    margin-left: 10px;
+    margin: 10px 10px 24px;
   }
 
   .bar-graph-btn {
@@ -596,7 +599,7 @@ input {
 
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 625px) {
   .page-container {
     display: block;
   }
