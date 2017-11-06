@@ -705,6 +705,20 @@ input {
     width: 70px;
   }
 
+  .graph-container {
+    padding-bottom: 50px;
+  }
+
+  .graph-number {
+    top: 105px;
+    left: 16px;
+  }
+
+  .graph-label {
+    top: 130px;
+    left: 13px;
+  }
+
   .bar-graph {
     height: 135px;
     width: 290px;
