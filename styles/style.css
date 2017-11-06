@@ -9,6 +9,8 @@ header button outlines are #bfbfbf
 
 
 need to:
+--> media query for BIG screens --> graphs && social sections all need to grow
+
 --> find graph 250px by 105 px... or make one??
 --> dropdown navs for sidebar menus
 
@@ -16,8 +18,6 @@ need to:
 --> consolidate container stying --> graphs and info esp
 --> add labels to circle graphs --> should go below graphs on mobile
 --> fix sidebar header's mobile appearance --> menu looks dumb
-
---> another media query for medium size screens so summary graphs justify L & R and maintain line?
 
 */
 
@@ -365,7 +365,7 @@ input {
   font-weight: 900;
   border-radius: 15px;
   padding: 0 12px;
-  margin: 10px 0 10px 66px;
+  margin: 10px 0 10px 68px;
 }
 
 .bar-graph-btn {
@@ -559,7 +559,7 @@ input {
 
 /* MEDIA */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 800px) {
 
 
 
@@ -579,7 +579,7 @@ input {
 
   /* SUMMARY - GRAPH SECTION */
   .bar-graph {
-    margin-left: 10px;
+    margin: 10px 10px 24px;
   }
 
   .bar-graph-btn {
@@ -596,7 +596,7 @@ input {
 
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 625px) {
   .page-container {
     display: block;
   }
