@@ -17,7 +17,6 @@ need to:
 --> consolidate container stying --> graphs and info esp
 --> add labels to circle graphs --> should go below graphs on mobile
 --> fix sidebar header's mobile appearance --> menu looks dumb
-
 */
 
 body {
@@ -395,7 +394,8 @@ input {
 }
 
 .bar-graph {
-  background-color: #006bb3;
+  /*background-color: #006bb3;*/
+  background: url(../images/graph.svg);
   height: 105px;
   margin: 10px 0 24px 25px;
   width: 250px;
@@ -703,6 +703,20 @@ input {
   .circle-graph {
     height: 70px;
     width: 70px;
+  }
+
+  .graph-container {
+    padding-bottom: 50px;
+  }
+
+  .graph-number {
+    top: 105px;
+    left: 16px;
+  }
+
+  .graph-label {
+    top: 130px;
+    left: 13px;
   }
 
   .bar-graph {
