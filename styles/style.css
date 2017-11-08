@@ -1,21 +1,3 @@
-/* 
-green is #2eb82e
-blue is #006bb3;
-sidebar background is # 262626
-sidebar text is #8c8c8c and #666666
-nav item font color is #8c8c8c
-header button outlines are #bfbfbf
-
-
-need to:
---> make circle graphs be actual %% instead of 25%/75%/50%
---> dropdown navs for sidebar menus...
-
---> consolidate service  & summary section button styling
---> consolidate container stying --> graphs and info esp
-
-*/
-
 body {
   color: #4d4d4d;
   font-family: 'Lato', sans-serif;
@@ -83,13 +65,13 @@ input {
 }
 
 .headshot-img {
-  background: url('../images/dog.jpg') no-repeat;
+  background: url('../images/headshot.jpg') no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 50%;
-  height: 65px;
+  height: 60px;
   margin: 0 auto 15px;
-  width: 65px;
+  width: 60px;
 }
 
 .headshot-label {
@@ -359,11 +341,11 @@ input {
 .interviews-graph {
   border-bottom-color: #2eb82e;
   border-left-color: #2eb82e;
-  border-top-color: #2eb82e; 
+  border-top-color: #2eb82e;
 }
 
 .forwards-graph {
-  border-bottom-color: orange; 
+  border-bottom-color: orange;
   border-left-color: orange;
   margin: 10px 0 25px;
 }
@@ -664,8 +646,10 @@ input {
 
   /*SIDEBAR --> MOBILE HEADER*/
   .sidebar-container {
+    display: none;
     height: auto;
     width: 100%;
+    display: flex;
   }
 
   .headshot-container {
@@ -675,11 +659,10 @@ input {
   .sidebar-nav { 
     border: none;
     box-sizing: border-box;
-    display: inline-block;
     margin: 0;
     padding: 0;
     text-align: center;
-    width: 32.5%;
+    width: 33.333333%;
   }
 
   .headshot-container {
@@ -739,8 +722,8 @@ input {
   }
 
   .circle-graph {
-    height: 70px;
-    width: 70px;
+    height: 65px;
+    width: 65px;
   }
 
   .graph-container {
@@ -749,17 +732,17 @@ input {
 
   .graph-number {
     top: 105px;
-    left: 16px;
+    left: 14px;
   }
 
   .graph-label {
     top: 130px;
-    left: 13px;
+    left: 11px;
   }
 
   .bar-graph {
     height: 135px;
-    width: 290px;
+    width: 275px;
   }
 
   .bar-graph {
