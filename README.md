@@ -10,10 +10,9 @@ My rendering:
 
 ![Desktop](images/static-comp-challenge-jl-desktop.png?raw=true "Desktop")
 
-Mobile
 ![Mobile](images/static-comp-challenge-jl-mobile.png?raw=true "Mobile")
 
-to see a live version visit:
+To see a live version visit:
 
 https://jjlljj.github.io/jl-comp-challenge-3/
 
@@ -24,10 +23,3 @@ https://jjlljj.github.io/jl-comp-challenge-3/
 ## Authors
 
 * **James Logue** - (https://github.com/jjlljj)
-
-
-
-
-
-
-static-comp-challenge-3-jl-mobile.png

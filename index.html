@@ -1,220 +1,185 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Static Comp Challenge 3</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="styles/reset.css">
-  <link rel="stylesheet" type="text/css" href="styles/style.css">
-</head>
-<body class="page-container">
-
-  
-
-  <header class="sidebar-container"> 
-    <div class="headshot-container"> 
-      <div class="headshot-img"></div>
-      <h3 class="headshot-label">Mary Smith <i class="fa fa-caret-down nav-icon" aria-hidden="true"></i></h3>
-    </div>
-
-    <nav class="sidebar-nav main-nav">
-      <h4 class="sidebar-nav-label">Main</h4>
-      <ul>
-        <li class="sidebar-nav-item"><i class="fa fa-home nav-icon" aria-hidden="true"></i>HOME</li>
-        <li class="sidebar-nav-item"><i class="fa fa-briefcase nav-icon" aria-hidden="true"></i>JOBS</li>
-        <li class="sidebar-nav-item"><i class="fa fa-id-card-o nav-icon" aria-hidden="true"></i>RESUMES</li>
-        <li class="sidebar-nav-item"><i class="fa fa-book nav-icon" aria-hidden="true"></i>TASKS</li>
-        <li class="sidebar-nav-item"><i class="fa fa-calendar nav-icon" aria-hidden="true"></i>CALENDAR</li>
-      </ul>
-    </nav>
-
-    <nav class="sidebar-nav admin-nav">
-      <h4 class="sidebar-nav-label">Admin</h4>
-      <ul>
-        <li class="sidebar-nav-item"><i class="fa fa-users nav-icon" aria-hidden="true"></i>USERS</li>
-        <li class="sidebar-nav-item"><i class="fa fa-location-arrow nav-icon" aria-hidden="true"></i>LOCATIONS</li>
-        <li class="sidebar-nav-item"><i class="fa fa-code-fork nav-icon" aria-hidden="true"></i>WORKFLOWS</li>
-        <li class="sidebar-nav-item active-item"><i class="fa fa-list-alt nav-icon" aria-hidden="true"></i>JOB BOARDS</li>
-        <li class="sidebar-nav-item"><i class="fa fa-share-alt nav-icon" aria-hidden="true"></i>SOCIAL</li>
-      </ul>
-    </nav>
-
-    <nav class="sidebar-nav cat-nav">
-      <h4 class="sidebar-nav-label">Categories</h4>
-      <ul>
-        <li class="sidebar-nav-item"><i class="fa fa-check-square nav-icon yellow-icon" aria-hidden="true"></i>Administrative</li>
-        <li class="sidebar-nav-item"><i class="fa fa-square nav-icon green-icon" aria-hidden="true"></i>Design</li>
-        <li class="sidebar-nav-item"><i class="fa fa-square nav-icon red-icon" aria-hidden="true"></i>Executive</li>
-        <li class="sidebar-nav-item"><i class="fa fa-square nav-icon green-icon" aria-hidden="true"></i>Human Resources</li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <main class="main-container">
-
-    <header class="main-header">
-
-      <button class="toggle-sidebar-btn hdr-btn">
-        <i class="fa fa-caret-left" aria-hidden="true"></i>
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </button>
-
-      <div class="site-search-wrap">
-        <i class="fa fa-search search-icon" aria-hidden="true"></i>
-        <input type="text" name="search" placeholder="Search for a job, task or resume" class="search-input"></input>
+  <head>
+    <title>Static Comp Challenge 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+  </head>
+  <body class="page-container">
+    <header class="sidebar-container"> 
+      <div class="headshot-container"> 
+        <div class="headshot-img"></div>
+        <h3 class="headshot-label">Jane Smith <i class="fa fa-caret-down nav-icon" aria-hidden="true"></i></h3>
       </div>
-
-      <button class="add-user-btn hdr-btn"><i class="fa fa-user-plus" aria-hidden="true"></i></button>
-      <button class="edit-cal-btn hdr-btn"><i class="fa fa-calendar" aria-hidden="true"></i></button>
-      <button class="tile-menu-btn hdr-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
-
-    </header>
-
-    <section class="service-rep-container">
-
-      <div class="service-title-wrap">
-      <h2 class="service-rep-title">Customer Service Representative</h2>
-        <h5 class="service-rep-loca"><i class="fa fa-map-marker" aria-hidden="true"></i>San Francisco, CA <span>•</span></h5>
-        <button class="post-preview-btn">Preview this post</button>
-      </div>
-
-      <nav class="service-nav-btn-wrap">
-        <button class="service-nav-btn service-open-btn"><i class="fa fa-circle" aria-hidden="true"></i>OPEN</button>
-        <button class="service-nav-btn"><i class="fa fa-bookmark" aria-hidden="true"></i></button>
-        <button class="service-nav-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-        <button class="service-nav-btn"><i class="fa fa-archive" aria-hidden="true"></i></button>
-      </nav>
-
-      <nav class="service-pages-nav">
+      <nav class="sidebar-nav main-nav">
+        <h4 class="sidebar-nav-label">Main</h4>
         <ul>
-          <li class="service-nav-item active-item">SUMMARY</li>
-          <li class="service-nav-item">APPLICANTS</li>
-          <li class="service-nav-item nav-drop-2">JOB BOARD</li>
-          <li class="service-nav-item nav-drop-2">INTERVIEWS</li>
-          <li class="service-nav-item service-show-more"><i class="fa fa-angle-double-right" aria-hidden="true"></i></li>
-          <li class="service-nav-item nav-drop">ACTIVITY</li>
-          <li class="service-nav-item nav-drop">BROADCAST</li>
-          <li class="service-nav-item nav-drop">NOTIFICATIONS</li>
+          <li class="sidebar-nav-item"><i class="fa fa-home nav-icon" aria-hidden="true"></i>HOME</li>
+          <li class="sidebar-nav-item"><i class="fa fa-briefcase nav-icon" aria-hidden="true"></i>JOBS</li>
+          <li class="sidebar-nav-item"><i class="fa fa-id-card-o nav-icon" aria-hidden="true"></i>RESUMES</li>
+          <li class="sidebar-nav-item"><i class="fa fa-book nav-icon" aria-hidden="true"></i>TASKS</li>
+          <li class="sidebar-nav-item"><i class="fa fa-calendar nav-icon" aria-hidden="true"></i>CALENDAR</li>
         </ul>
       </nav>
-    </section>
-
-
-    <section class="summary-graphs-container">
-      <section class="graphs-wrap">
-        <article class="graph-container">
-          <div class="circle-graph applicant-graph"></div>
-          <h2 class="graph-number">3,154</h2>
-          <h4 class="graph-label">APPLICANTS</h4>
-        </article>
-
-        <article class="graph-container">
-          <div class="circle-graph interviews-graph"></div>
-          <h2 class="graph-number">2,546</h2>
-          <h4 class="graph-label">INTERVIEWS</h4>
-        </article>
-
-        <article class="graph-container">
-          <div class="circle-graph forwards-graph"></div>
-          <h2 class="graph-number"> 1,112</h2>
-          <h4 class="graph-label">FORWARDS</h4>
-        </article>
-        <button class="summary-btn">TOTALS - Out of <span>5,231</span> views</button>
-
+      <nav class="sidebar-nav admin-nav">
+        <h4 class="sidebar-nav-label">Admin</h4>
+        <ul>
+          <li class="sidebar-nav-item"><i class="fa fa-users nav-icon" aria-hidden="true"></i>USERS</li>
+          <li class="sidebar-nav-item"><i class="fa fa-location-arrow nav-icon" aria-hidden="true"></i>LOCATIONS</li>
+          <li class="sidebar-nav-item"><i class="fa fa-code-fork nav-icon" aria-hidden="true"></i>WORKFLOWS</li>
+          <li class="sidebar-nav-item active-item"><i class="fa fa-list-alt nav-icon" aria-hidden="true"></i>JOB BOARDS</li>
+          <li class="sidebar-nav-item"><i class="fa fa-share-alt nav-icon" aria-hidden="true"></i>SOCIAL</li>
+        </ul>
+      </nav>
+      <nav class="sidebar-nav cat-nav">
+        <h4 class="sidebar-nav-label">Categories</h4>
+        <ul>
+          <li class="sidebar-nav-item"><i class="fa fa-check-square nav-icon yellow-icon" aria-hidden="true"></i>Administrative</li>
+          <li class="sidebar-nav-item"><i class="fa fa-square nav-icon green-icon" aria-hidden="true"></i>Design</li>
+          <li class="sidebar-nav-item"><i class="fa fa-square nav-icon red-icon" aria-hidden="true"></i>Executive</li>
+          <li class="sidebar-nav-item"><i class="fa fa-square nav-icon green-icon" aria-hidden="true"></i>Human Resources</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <header class="main-header">
+        <button class="toggle-sidebar-btn hdr-btn">
+          <i class="fa fa-caret-left" aria-hidden="true"></i>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="site-search-wrap">
+          <i class="fa fa-search search-icon" aria-hidden="true"></i>
+          <input type="text" name="search" placeholder="Search for a job, task or resume" class="search-input"></input>
+        </div>
+        <button class="add-user-btn hdr-btn"><i class="fa fa-user-plus" aria-hidden="true"></i></button>
+        <button class="edit-cal-btn hdr-btn"><i class="fa fa-calendar" aria-hidden="true"></i></button>
+        <button class="tile-menu-btn hdr-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+      </header>
+      <section class="service-rep-container">
+        <div class="service-title-wrap">
+        <h2 class="service-rep-title">Customer Service Representative</h2>
+          <h5 class="service-rep-loca"><i class="fa fa-map-marker" aria-hidden="true"></i>San Francisco, CA <span>•</span></h5>
+          <button class="post-preview-btn">Preview this post</button>
+        </div>
+        <nav class="service-nav-btn-wrap">
+          <button class="service-nav-btn service-open-btn"><i class="fa fa-circle" aria-hidden="true"></i>OPEN</button>
+          <button class="service-nav-btn"><i class="fa fa-bookmark" aria-hidden="true"></i></button>
+          <button class="service-nav-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+          <button class="service-nav-btn"><i class="fa fa-archive" aria-hidden="true"></i></button>
+        </nav>
+        <nav class="service-pages-nav">
+          <ul>
+            <li class="service-nav-item active-item">SUMMARY</li>
+            <li class="service-nav-item">APPLICANTS</li>
+            <li class="service-nav-item nav-drop-2">JOB BOARD</li>
+            <li class="service-nav-item nav-drop-2">INTERVIEWS</li>
+            <li class="service-nav-item service-show-more"><i class="fa fa-angle-double-right" aria-hidden="true"></i></li>
+            <li class="service-nav-item nav-drop">ACTIVITY</li>
+            <li class="service-nav-item nav-drop">BROADCAST</li>
+            <li class="service-nav-item nav-drop">NOTIFICATIONS</li>
+          </ul>
+        </nav>
       </section>
-      <section class="graphs-wrap">
-        <article class="bar-graph"></article>
-        <button class="summary-btn  bar-graph-btn">APPLICANTS/DAY</button>
+      <section class="summary-graphs-container">
+        <section class="graphs-wrap">
+          <article class="graph-container">
+            <div class="circle-graph applicant-graph"></div>
+            <h2 class="graph-number">3,154</h2>
+            <h4 class="graph-label">APPLICANTS</h4>
+          </article>
+          <article class="graph-container">
+            <div class="circle-graph interviews-graph"></div>
+            <h2 class="graph-number">2,546</h2>
+            <h4 class="graph-label">INTERVIEWS</h4>
+          </article>
+          <article class="graph-container">
+            <div class="circle-graph forwards-graph"></div>
+            <h2 class="graph-number"> 1,112</h2>
+            <h4 class="graph-label">FORWARDS</h4>
+          </article>
+          <button class="summary-btn">TOTALS - Out of <span>5,231</span> views</button>
+        </section>
+        <section class="graphs-wrap">
+          <article class="bar-graph"></article>
+          <button class="summary-btn  bar-graph-btn">APPLICANTS/DAY</button>
+        </section>
+        <button class="summary-toggle-btn"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
       </section>
-
-      <button class="summary-toggle-btn"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
-
-    </section>
-
-     <section class="summary-info-container">
-
-      <section class="job-description-container">
-        <header class="description-hdr">
-          <h3 class="description-title">JOB DESCRIPTION</h3>
-          <button class="description-edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i>EDIT</button>
-        </header>
-
-        <table class="description-table">
-          <tr class="description-row">
-            <td class="row-data"><h3 class="row-heading">POSITION TITLE</h3></td>
-            <td class="row-data"><p class="row-content">Customer Service Representative</p></td>
-          </tr>
-          <tr class="description-row">
-            <td class="row-data"><h3 class="row-heading">LOCATION</h3></td>
-            <td class="row-data"><p class="row-content">San Francisco, CA</p></td>
-          </tr>
-          <tr class="description-row">
-            <td class="row-data"><h3 class="row-heading">EMPLOYMENT TYPE</h3></td>
-            <td class="row-data"><p class="row-content">Full-time</p></td>
-          </tr>
-          <tr class="description-row">
-            <td class="row-data"><h3 class="row-heading">EXPERIENCE</h3></td>
-            <td class="row-data"><p class="row-content">Mid-level</p></td>
-          </tr>
-          <tr class="description-row">
-            <td class="row-data"><h3 class="row-heading">STATUS</h3></td>
-            <td class="row-data"><p class="row-content">Open</p></td>
-          </tr>
-          <tr class="description-row">
-            <td class="row-data"><h3 class="row-heading">DESCRIPTION</h3></td>
-            <td class="row-data"><p class="row-content">Bring to the table win-win survival strategies to ensure proactive. At the end of the day, a new normal that has evolved from is on the runway heading towards a streamlined cloud solution. Dynamically procrastinate visualize customer directed convergence without.</p></td>
-          </tr>
-          <tr class="description-row">
-            <td class="row-data"><h3 class="row-heading">HIRING LEAD</h3></td>
-            <td class="row-data"><div class="table-headshot"></div><p class="row-content">Tom Tizzy</p></td>
-          </tr>
-          <tr class="description-row">
-            <td class="row-data"><h3 class="row-heading">APPROVED SALARY</h3></td>
-            <td class="row-data"><p class="row-content">$58,000</p></td>
-          </tr>
-        </table>
+       <section class="summary-info-container">
+        <section class="job-description-container">
+          <header class="description-hdr">
+            <h3 class="description-title">JOB DESCRIPTION</h3>
+            <button class="description-edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i>EDIT</button>
+          </header>
+          <table class="description-table">
+            <tr class="description-row">
+              <td class="row-data"><h3 class="row-heading">POSITION TITLE</h3></td>
+              <td class="row-data"><p class="row-content">Customer Service Representative</p></td>
+            </tr>
+            <tr class="description-row">
+              <td class="row-data"><h3 class="row-heading">LOCATION</h3></td>
+              <td class="row-data"><p class="row-content">San Francisco, CA</p></td>
+            </tr>
+            <tr class="description-row">
+              <td class="row-data"><h3 class="row-heading">EMPLOYMENT TYPE</h3></td>
+              <td class="row-data"><p class="row-content">Full-time</p></td>
+            </tr>
+            <tr class="description-row">
+              <td class="row-data"><h3 class="row-heading">EXPERIENCE</h3></td>
+              <td class="row-data"><p class="row-content">Mid-level</p></td>
+            </tr>
+            <tr class="description-row">
+              <td class="row-data"><h3 class="row-heading">STATUS</h3></td>
+              <td class="row-data"><p class="row-content">Open</p></td>
+            </tr>
+            <tr class="description-row">
+              <td class="row-data"><h3 class="row-heading">DESCRIPTION</h3></td>
+              <td class="row-data"><p class="row-content">Bring to the table win-win survival strategies to ensure proactive. At the end of the day, a new normal that has evolved from is on the runway heading towards a streamlined cloud solution. Dynamically procrastinate visualize customer directed convergence without.</p></td>
+            </tr>
+            <tr class="description-row">
+              <td class="row-data"><h3 class="row-heading">HIRING LEAD</h3></td>
+              <td class="row-data"><div class="table-headshot"></div><p class="row-content">Tom Tizzy</p></td>
+            </tr>
+            <tr class="description-row">
+              <td class="row-data"><h3 class="row-heading">APPROVED SALARY</h3></td>
+              <td class="row-data"><p class="row-content">$58,000</p></td>
+            </tr>
+          </table>
+        </section>      
+        <section class="social-container">
+          <article class="social-btn-wrap">
+            <button class="social-btn facebook-btn"><i class="fa fa-facebook social-icon" aria-hidden="true"></i>Post to Facebook</button>
+            <button class="social-btn twitter-btn"><i class="fa fa-twitter social-icon" aria-hidden="true"></i>Tweet this Job</button>
+            <button class="social-btn linked-in-btn"><i class="fa fa-linkedin-square social-icon" aria-hidden="true"></i>Post to LinkedIn</button>
+          </article>
+          <article class="social-widget-wrap">
+            <h3 class="widget-title"><i class="fa fa-globe widget-icon" aria-hidden="true"></i>Link to this Job</h3>
+            <p class="widget-text">Lorem ipsum dolor sit amet, consecutur adipis cing elet. Integer mollis neque eget vastipend.</p>
+            <div class="url-wrap">
+              <p class="url-text">https://www.thisisnotareallink.org/dontclickit/reallyimeanit</p>
+              <button class="copy-url-btn">Copy</button>
+            </div>
+          </article>
+          <article class="social-widget-wrap">
+            <h3 class="widget-title"><i class="fa fa-tasks widget-icon" aria-hidden="true"></i>Use the Button Widget</h3>
+            <p class="widget-text">The widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
+            <div class="url-wrap">
+              <code class="url-text">https://www.alsofake.net/</code>
+              <button class="copy-url-btn">Copy</button>
+            </div>
+          </article>
+          <article class="social-widget-wrap">
+            <h3 class="widget-title"><i class="fa fa-paper-plane widget-icon" aria-hidden="true"></i>Upload Resumes by Email</h3>
+            <p class="widget-text"> You can automatically upload multiple resumes to this job by emailing the address below.</p>
+            <div class="url-wrap">
+              <p class="url-text">itsatrapitsfake@gmail.com</p>
+            </div>
+          </article>
+        </section>
       </section>
-      
-      <section class="social-container">
-        <article class="social-btn-wrap">
-          <button class="social-btn facebook-btn"><i class="fa fa-facebook social-icon" aria-hidden="true"></i>Post to Facebook</button>
-          <button class="social-btn twitter-btn"><i class="fa fa-twitter social-icon" aria-hidden="true"></i>Tweet this Job</button>
-          <button class="social-btn linked-in-btn"><i class="fa fa-linkedin-square social-icon" aria-hidden="true"></i>Post to LinkedIn</button>
-        </article>
-
-        <article class="social-widget-wrap">
-          <h3 class="widget-title"><i class="fa fa-globe widget-icon" aria-hidden="true"></i>Link to this Job</h3>
-          <p class="widget-text">Lorem ipsum dolor sit amet, consecutur adipis cing elet. Integer mollis neque eget vastipend.</p>
-          <div class="url-wrap">
-            <p class="url-text">https://www.thisisnotareallink.org/dontclickit/reallyimeanit</p>
-            <button class="copy-url-btn">Copy</button>
-          </div>
-        </article>
-
-        <article class="social-widget-wrap">
-          <h3 class="widget-title"><i class="fa fa-tasks widget-icon" aria-hidden="true"></i>Use the Button Widget</h3>
-          <p class="widget-text">The widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
-          <div class="url-wrap">
-            <code class="url-text">https://www.alsofake.net/</code>
-            <button class="copy-url-btn">Copy</button>
-          </div>
-        </article>
-
-        <article class="social-widget-wrap">
-          <h3 class="widget-title"><i class="fa fa-paper-plane widget-icon" aria-hidden="true"></i>Upload Resumes by Email</h3>
-          <p class="widget-text"> You can automatically upload multiple resumes to this job by emailing the address below.</p>
-          <div class="url-wrap">
-            <p class="url-text">itsatrapitsfake@gmail.com</p>
-          </div>
-        </article>
-
-      </section>
-
-    </section>
-
-  </main>
-
-</body>
+    </main>
+  </body>
 </html>
